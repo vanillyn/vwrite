@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dwjqmxbvlqau7"]
+
+[node name="Stylebar" type="HBoxContainer"]
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+text = "view"
+
+[node name="Undo" type="Button" parent="."]
+layout_mode = 2
+text = "<-"
+
+[node name="Redo" type="Button" parent="."]
+layout_mode = 2
+text = "->"
+
+[node name="VSeparator" type="VSeparator" parent="."]
+layout_mode = 2
+
+[node name="TextStyles" type="MenuButton" parent="."]
+layout_mode = 2
+text = "style"
+
+[node name="Fonts" type="MenuButton" parent="."]
+layout_mode = 2
+text = "font"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Up" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Down" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "-"
+
+[node name="VSeparator2" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Bold" type="Button" parent="."]
+layout_mode = 2
+text = "B"
+
+[node name="Italic" type="Button" parent="."]
+layout_mode = 2
+text = "I"
+
+[node name="Underline" type="Button" parent="."]
+layout_mode = 2
+text = "U"
+
+[node name="VSeparator3" type="VSeparator" parent="."]
+layout_mode = 2
+
+[node name="FontColor" type="ColorPickerButton" parent="."]
+layout_mode = 2
+text = "color"
+
+[node name="HighlightColor" type="ColorPickerButton" parent="."]
+layout_mode = 2
+text = "highlight"

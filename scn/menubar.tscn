@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://ca0lbgo1oh3xp"]
+
+[node name="Menubar" type="HBoxContainer"]
+
+[node name="File" type="MenuButton" parent="."]
+layout_mode = 2
+text = "file"
+item_count = 4
+popup/item_0/text = "open"
+popup/item_0/id = 0
+popup/item_1/text = "save"
+popup/item_1/id = 1
+popup/item_2/text = "save as"
+popup/item_2/id = 2
+popup/item_3/text = "new"
+popup/item_3/id = 3
+
+[node name="Edit" type="MenuButton" parent="."]
+layout_mode = 2
+text = "edit"
+item_count = 6
+popup/item_0/text = "undo"
+popup/item_0/id = 0
+popup/item_1/text = "redo"
+popup/item_1/id = 1
+popup/item_2/text = "cut"
+popup/item_2/id = 2
+popup/item_3/text = "copy"
+popup/item_3/id = 3
+popup/item_4/text = "paste"
+popup/item_4/id = 4
+popup/item_5/text = "find"
+popup/item_5/id = 5
+
+[node name="View" type="MenuButton" parent="."]
+layout_mode = 2
+text = "view"
+item_count = 4
+popup/item_0/text = "change theme"
+popup/item_0/id = 0
+popup/item_1/id = 1
+popup/item_1/separator = true
+popup/item_2/text = "zoom in"
+popup/item_2/id = 2
+popup/item_3/text = "zoom out"
+popup/item_3/id = 3
+
+[node name="Insert" type="MenuButton" parent="."]
+layout_mode = 2
+text = "insert"
+item_count = 4
+popup/item_0/text = "text"
+popup/item_0/id = 0
+popup/item_1/text = "image"
+popup/item_1/id = 1
+popup/item_2/text = "link"
+popup/item_2/id = 2
+popup/item_3/text = "separator"
+popup/item_3/id = 3
+
+[node name="Settings" type="MenuButton" parent="."]
+layout_mode = 2
+text = "options"
+item_count = 3
+popup/item_0/text = "vwrite preferences"
+popup/item_0/id = 0
+popup/item_1/text = "change theme"
+popup/item_1/id = 1
+popup/item_2/text = "about vwrite"
+popup/item_2/id = 2

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://pu6odpfhotys"]
+
+[ext_resource type="Script" uid="uid://dpf4vnitfs2cw" path="res://src/label.gd" id="1_mf43e"]
+
+[node name="Statusbar" type="HBoxContainer"]
+
+[node name="LeftLabel" type="Label" parent="."]
+layout_mode = 2
+text = "vwrite by vanillyn."
+script = ExtResource("1_mf43e")
+
+[node name="VSeparator" type="VSeparator" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RightLabel" type="Label" parent="."]
+layout_mode = 2
+text = "untitled"
+horizontal_alignment = 2
+script = ExtResource("1_mf43e")

@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7udecrl3te0p"]
+
+[ext_resource type="Script" uid="uid://dtqnarf5dfkul" path="res://src/filesystem.gd" id="1_a14j1"]
+[ext_resource type="PackedScene" uid="uid://ca0lbgo1oh3xp" path="res://scn/menubar.tscn" id="2_4hsr3"]
+[ext_resource type="PackedScene" uid="uid://pu6odpfhotys" path="res://scn/statusbar.tscn" id="3_gyckk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a14j1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="Content" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Menubar" parent="MarginContainer/Content" instance=ExtResource("2_4hsr3")]
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="MarginContainer/Content"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Start typing your heart out..."
+
+[node name="Statusbar" parent="MarginContainer/Content" instance=ExtResource("3_gyckk")]
+layout_mode = 2
+
+[node name="OpenFile" type="FileDialog" parent="."]
+title = "Open a File"
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+
+[node name="SaveFile" type="FileDialog" parent="."]
+access = 2
